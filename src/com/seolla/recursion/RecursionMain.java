@@ -8,7 +8,7 @@ import java.util.Arrays;
 public class RecursionMain {
     public static void main(String[] args) {
 //        System.out.println(factorial(5));
-//        System.out.println(fibonacci(50));
+//        System.out.println(fibonacci(50L));
         System.out.println(size(new int[]{1, 2, 3, 4}));
     }
 
@@ -27,13 +27,13 @@ public class RecursionMain {
         }
     }
 
-    public static int fibonacci(int i) {
+    public static long fibonacci(long i) {
         if (i == 0) {
             return 0;
         } else if (i == 1) {
             return 1;
         } else {
-            return fibonacci(i - 1) + fibonacci(i - 2);
+            return fibonacci(i - 1L) + fibonacci(i - 2L);
         }
     }
 
